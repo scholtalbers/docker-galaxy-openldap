@@ -1,0 +1,33 @@
+# add dummy & galaxy user
+dn: uid=dummy,dc=example,dc=org
+changetype: add
+cn: dummy
+gecos: Dummy User
+gidnumber: 14564100
+homedirectory: /home/dummy
+loginshell: /bin/bash
+mail: dummy@example.org
+objectclass: top
+objectclass: posixAccount
+objectclass: inetOrgPerson
+sn: 4
+uid: dummy
+uidnumber: 14583104
+userpassword: dummy
+
+# uid=galaxy,dc=example,dc=org
+dn: uid=galaxy,dc=example,dc=org
+changetype: add
+cn: galaxy
+gecos: Galaxy User
+gidnumber: 14564100
+homedirectory: /home/galaxy
+loginshell: /bin/bash
+mail: galaxy@example.org
+objectclass: top
+objectclass: posixAccount
+objectclass: inetOrgPerson
+sn: 4
+uid: galaxy
+uidnumber: 14583103
+userpassword: galaxy
